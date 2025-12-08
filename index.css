@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
 }
 
-
 body, html {
     margin: 0;
     padding: 0;
@@ -18,7 +17,7 @@ body, html {
 
 .navbar {
     position: relative;
-    width: 90%;
+    width: 87%;
     display: flex;
     align-items: center;
     gap: 24px;
@@ -35,6 +34,7 @@ body, html {
 }
 
 .logo {
+    font-size: 18px;
     font-weight: bold;
     color: #ffffff;
 }
@@ -202,12 +202,11 @@ body, html {
 
 .center-line {
     top: 1784px;
-    left: 100%;
-    width: 1312px;
-    height: 3px;
-    margin: 30px auto;
+    width: 93%;
+    height: 5px;
     border-radius: 5px;
-    background-color: #007224;
+    margin: 30px auto;
+    background: #007224;
 }
 
 .troy {
@@ -326,7 +325,6 @@ body, html {
     font-weight: 700;
     font-style: bold;
 }
-
 
 .hafa {
     display: flex;
