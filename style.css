@@ -1,0 +1,209 @@
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  background:#5a5a5a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.overlay{
+  position:fixed;
+  inset:0;
+  background:#1f1f1f;
+  opacity:.46;
+  z-index:10;
+}
+.popup-card{
+  position:relative;
+  z-index:20;
+  width:88%;
+  max-width:900px;
+  border-radius:8px; 
+  padding:0;
+  box-shadow:0 40px 40px rgba(0,0,0,0.102);
+  background: linear-gradient(180deg, 
+    #FCFBF5 0%, 
+    #3C8A3C 30%, 
+    #2B8F20 60%, 
+    #37A138 85%, 
+    #46B746 100%
+  );
+  overflow:visible;
+}
+.popup-card::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:-120px;
+  width:900px;
+  height:380px;
+  background: radial-gradient(60% 40% at 50% 60%, rgba(151,222,144,0.9) 0%, rgba(0,50,5,0.6) 50%, rgba(0,50,5,0.25) 100%);
+  filter: blur(379px);
+  z-index:5;
+  pointer-events:none;
+}
+.card-inner{
+  position:relative;
+  z-index:20;
+  padding:48px 42px 40px 42px;
+  border-radius:8px; 
+  background: transparent;
+  text-align:center;
+  color:#0b0b0b;
+  letter-spacing:-0.01em;
+}
+.card-inner h2{
+  margin:0 0 8px 0;
+  font-size:28px;
+  font-weight:500;
+  line-height:1.05;
+  color:#061203;
+}
+.subtitle{
+  margin:0 0 18px 0;
+  font-size:14px;
+  font-weight:300;
+  color:rgba(4,4,4,0.85);
+  line-height:1.45;
+}
+.insights-preview h3{
+  margin:0 0 12px 0;
+  font-size:16px;
+  font-weight:500;
+  color:#000;
+}
+.checkbox-row{
+  display:flex;
+  gap:48px;
+  justify-content:center;
+  margin-bottom:22px;
+  align-items:center;
+}
+.checkbox-container{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:13.5px;
+  cursor:pointer;
+  user-select:none;
+  font-weight:400;
+  color:#000;
+}
+.checkbox-container input{display:none}
+.checkmark{
+  width:20px;
+  height:20px;
+  background:#1f8a2f; 
+  border:1px solid #fff; 
+  border-radius:4px;
+  display:inline-block;
+  position:relative;
+}
+.checkbox-container input:checked + .checkmark{
+  background:#1b7c2a; 
+  border-color:#fff;
+}
+.checkbox-container input:checked + .checkmark::after{
+  content:"";
+  position:absolute;
+  left:4px; 
+  top:2px;
+  width:6px;
+  height:10px;
+  border:solid #fff;
+  border-width:0 2px 2px 0;
+  transform:rotate(45deg);
+  box-sizing:content-box;
+}
+.select-row{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:22px;
+}
+.custom-select{
+  min-width:320px;
+  max-width:420px;
+  padding:12px 16px;
+  border-radius:8px;
+  background: rgba(255,255,255,0.05);
+  border:1.4px solid #C99A2E;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  cursor:pointer;
+  color:#f2f2f2;
+  font-weight:500;
+  font-size:15px;
+  position:relative; 
+  backdrop-filter: blur(2px);
+}
+.select-label{
+  color: #f8f8f8;
+  opacity:0.95;
+  mix-blend-mode: normal;
+}
+.caret{
+  width:12px;
+  height:12px;
+  border-left:2px solid #fff;
+  border-bottom:2px solid #fff;
+  transform:rotate(-45deg);
+  margin-left:12px;
+  opacity:0.95;
+}
+.dropdown{
+  position: absolute;
+  top:100%; 
+  left:0;
+  width:100%;
+  background: rgba(255,255,255,0.05);
+  border-radius:8px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.12);
+  z-index:30;
+  padding:8px 0;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.dropdown.hidden{ display: none; }
+.drop-item{
+  background:transparent;
+  border:none;
+  text-align:left;
+  padding:10px 12px;
+  font-size:14px;
+  font-weight:500;
+  cursor:pointer;
+  border-radius:6px;
+  color:#f2f2f2;
+}
+.drop-item:hover{background: rgba(255,255,255,0.1);}
+.btn-green{
+  padding:11px 18px;
+  border-radius:8px;
+  border:none;
+  background:#0a7d1e; 
+  color:#fff;
+  font-weight:500;
+  font-size:14.5px;
+  cursor:pointer;
+  box-shadow:0 10px 40px rgba(0,0,0,0.102);
+}
+.btn-green:hover{background:#066817}
+.footer-text{
+  margin-top:28px;
+  font-size:13px;
+  color:rgba(7,7,7,0.9);
+}
+@media(max-width:440px){
+  .card-inner{padding:28px 20px 24px 20px;border-radius:8px}
+  .custom-select{min-width:220px}
+  .dropdown{top:100%;width:90%}
+}
