@@ -21,8 +21,8 @@ body{
   position:relative;
   z-index:20;
   width:88%;
-  max-width:900px;
-  border-radius:8px; 
+  max-width:600px;
+  border-radius:16px; 
   padding:0;
   box-shadow:0 40px 40px rgba(0,0,0,0.102);
   background: linear-gradient(180deg, 
@@ -40,7 +40,7 @@ body{
   left:50%;
   transform:translateX(-50%);
   bottom:-120px;
-  width:900px;
+  width:400px;
   height:380px;
   background: radial-gradient(60% 40% at 50% 60%, rgba(151,222,144,0.9) 0%, rgba(0,50,5,0.6) 50%, rgba(0,50,5,0.25) 100%);
   filter: blur(379px);
@@ -186,8 +186,8 @@ body{
 }
 .drop-item:hover{background: rgba(255,255,255,0.1);}
 .btn-green{
-  padding:11px 18px;
-  border-radius:8px;
+  padding:16px 8px;
+  border-radius:16px;
   border:none;
   background:#0a7d1e; 
   color:#fff;
