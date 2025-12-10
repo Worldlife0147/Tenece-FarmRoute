@@ -25,9 +25,9 @@ body {
 .card {
     width: 100%;
     max-width: 600px;
-    background: linear-gradient(to bottom, white, #0a8011, #0e670e);
+    background: linear-gradient(to bottom, white, #0a8011, #0fb20f);
     padding: 30px 20px;
-    border-radius: 15px;
+    border-radius: 8px;
     text-align: center;
     color: #0a0a0a;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -52,6 +52,33 @@ body {
     
 }
 
+/* Make checkboxes green */
+input[type="checkbox"] {
+    appearance: none;          /* Remove default checkbox */
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #062502; /* Green border */
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #0b6f0b; /* Green check fill */
+    border-color: white;
+    
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 10px;
+    color: white;
+}
 .checks input {
     transform: scale(1.1);
     margin-right: 6px;
@@ -69,13 +96,19 @@ body {
     border: 2px solid #dbbe15;
     background: #4e9f4c;
     font-size: 15px;
+    width: 180px;
+    height: 40px;
+}
+
+.region-select option.placeholder{
+    display: none;
 }
 
 .best-crop-btn {
     background: #084808;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 22px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 15px;
