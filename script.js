@@ -4,6 +4,7 @@ const regionToggle = document.getElementById('regionToggle');
 const dropdown = document.getElementById('dropdown');
 const viewBtn = document.getElementById('viewBtn');
 
+
 let selectedRegion = '';
 
 overlay.addEventListener('click', closeAll);
