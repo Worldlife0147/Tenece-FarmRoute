@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Insights Popup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="overlay" class="overlay"></div>
+
+  <div id="modal" class="popup-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="card-inner">
+      <h2 id="modalTitle">Find the Best Crop for<br>Your Region</h2>
+
+      <p class="subtitle">
+        Choose your region to view the top-selling and most<br>
+        profitable crops near you.
+      </p>
+
+      <div class="insights-preview">
+        <h3>Insights Preview:</h3>
+        <div class="checkbox-row">
+          <label class="checkbox-container">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+            Most profitable options
+          </label>
+
+          <label class="checkbox-container">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+            Market Demand
+          </label>
+        </div>
+      </div>
+
+      <div class="select-row">
+        <div class="custom-select" id="regionToggle" tabindex="0" aria-haspopup="true" aria-expanded="false">
+          <span class="select-label">Select Your Region</span>
+          <span class="caret" aria-hidden="true"></span>
+
+          <div id="dropdown" class="dropdown hidden" role="menu" aria-labelledby="regionToggle">
+            <button class="drop-item" data-value="North">North</button>
+            <button class="drop-item" data-value="West">West</button>
+            <button class="drop-item" data-value="East">East</button>
+            <button class="drop-item" data-value="South">South</button>
+          </div>
+        </div>
+
+        <button id="viewBtn" class="btn-green">View Best Crop</button>
+      </div>
+
+
+      <p class="footer-text">Powered by real market data.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
