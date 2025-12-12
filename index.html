@@ -35,22 +35,27 @@
         <div cless="select-button-row">
         <select class="region">
           <option value="" disabled selected>Select Your Region</option>
-          <option class="sub-region" value="north">North</option>
+          <option class="sub-region" value="BST WEB DEV/index_secondScrn.html">North</option>
           <option class="sub-region" value="south">South</option>
           <option class="sub-region" value="east">East</option>
           <option class="sub-region" value="west">West</option>
         </select>
         
-        <a href="">
-            <button id="bestcrop"
+        
+            <button id="goBtn"
             class="lite">View Best Crop</button>
-        </a>
+        
 
         <script>
-          const btn = document.getElementById("bestcrop")
-          btn.addEventListener("click", function () {
-            btn.classList.toggle("active");
-          });
+          document.getElementById("goBtn").onclick = function () {
+            const selected = document.getElementById("pageSelector").value;
+
+            if (selected) {
+              window.location.href = selected;   // Redirect to selected page
+            } else {
+              alert("Please select a page first.");
+            }
+          };
         </script>
         </div>
         </div>
