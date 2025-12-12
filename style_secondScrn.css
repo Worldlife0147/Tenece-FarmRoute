@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background: linear-gradient(#e4ffe8, #b2f5c8);
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.logo {
+  height: auto;
+  color: #fff;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: green;
+  background-image: linear-gradient(to right, green, black);
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav_item {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+ul:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav_item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 20px;
+  }
+
+  Ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  li {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+}
+
+/* HEADER */
+.header-section {
+  text-align: center;
+  padding: 30px;
+}
+.header-section h2 {
+  background: transparent;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: #eec044 2px solid;
+  font-size: 60px;
+  margin-top: 60px;
+}
+
+.header-section h3 {
+  margin-top: 65px;
+  font-size: 40px;
+}
+
+.header-section p {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+/* CARDS */
+.cards-container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card {
+  display: flex;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+em {
+  color: #0f8a42;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-content {
+  margin-left: 15px;
+}
+
+.card-content h4 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* BADGE */
+.rank-badge {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  background: #0f8a42;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 30px;
+}
+
+/* MARKET SECTION */
+.market-section {
+  background: #e1ffe8;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+.market-title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 60px;
+  color: #007224;
+}
+.market-grid {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+.buyers-box,
+.ranking-box h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.buyers-box h3 {
+  color: #0f8a42;
+}
+
+.buyers-box,
+.ranking-box {
+  width: 40%;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.b1 {
+  background: #0b8a0b;
+  color: white;
+}
+.b2 {
+  background: #58c75c;
+  color: white;
+}
+.b3 {
+  background: #bfeec0;
+  color: #007224;
+}
+.b4 {
+  background: white;
+  border: 2px solid #a6e6a6;
+  color: #007224;
+}
+
+/*RANKING BOX*/
+.ranking-box {
+  background-color: #007224;
+  color: #fff;
+}
+
+.ranking-box span {
+  font-size: 25px;
+  color: #eec044;
+  margin-left: 40px;
+}
+
+.ranking-box li {
+  list-style: none;
+  margin: 40px;
+  font-size: 35px;
+}
+
+.buyers-box p {
+  display: block;
+  padding: 5px 0;
+  align-content: center;
+  margin: 15px 20px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.range {
+  background: linear-gradient(to right, #e1ffe8, #007224);
+  height: 10px;
+  width: 80%;
+  margin-left: 90px;
+  border-radius: 30px;
+}
+
+.range-buyer {
+  margin-top: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.ranking-list {
+  display: block;
+}
+
+.chart {
+  text-align: center;
+}
+
+.chart img {
+  width: 60%;
+  height: auto;
+  margin: 50px;
+  border-radius: 50px;
+}
+
+.region-section {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.region-section a {
+  text-decoration: none;
+  background-color: #007224;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .header-section h2 {
+    font-size: 35px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/**Footer**/
+
+footer {
+  background: linear-gradient(to bottom, #0f8a42, #033112);
+  margin-top: 40px;
+  padding: 120px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.cont-info,
+.cont-add,
+.socials {
+  width: 500px;
+  height: 170px;
+  color: #fff;
+}
+
+.cont-info h1,
+.cont-add h1,
+.socials h1 {
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.cont-info img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cont-info p,
+.cont-add p {
+  padding: 5px;
+}
+
+.divide {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.trademark {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .cont-info,
+  .cont-add,
+  .socials {
+    width: 300px;
+    height: auto;
+  }
+
+  footer {
+    padding: 50px;
+  }
+
+  .trademark {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

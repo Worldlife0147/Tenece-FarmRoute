@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmRoute</title>
+    <link rel="stylesheet" href="style_secondScrn.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+            <img src="logo.svg" alt="logo">
+          </div>
+            <div class="menu-toggle" id="mobile-menu" onclick="showMenu()">&#9776</div>
+            <div class="nav-menu">
+                <div class="menu-toggle" id="mobile-menu" onclick="hideMenu()">&#9776</div>
+                <ul>
+                    <li class="nav_item"><a href="index.html" class="nav_links">Home</a></li>
+                    <li class="nav_item"><a href="index.html#about-us" class="nav_links">About Us</a></li>
+                    <li class="nav_item"><a href="#market" class="nav_links">Insights</a></li>
+                    <li class="nav_item"><a href="#contact-us" class="nav_links">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="header-section">
+            <h2>Results for Northern Region</h2>
+            <h3>Top Crops In This Region</h3>
+            <p class="sub">Ranked by current market demand</p>
+        </section>
+    </header>
+
+    
+
+  <!-- Crop Ranking Cards -->
+  <section class="cards-container">
+
+    <!-- CARD TEMPLATE -->
+    <div class="card">
+      <img src="IMG2/maize.png" alt="maize">
+      <div class="card-content">
+        <h4>MAIZE</h4>
+        <p><strong>Selling Price:</strong> 1,200 naira per kg</p>
+        <p><strong>Estimated Monthly Value:</strong> <em>Very High,</em> Stable demand from feed mills & food processors</p>
+        <p><strong>Demand Insight:</strong> Consistently high, especially in livestock zones</p>
+      </div>
+      <span class="rank-badge">1ST</span>
+    </div>
+
+    <div class="card">
+      <img src="IMG2/millet.png" alt="millet">
+      <div class="card-content">
+        <h4>MILLET</h4>
+        <p><strong>Selling Price:</strong> 650 naira per kg</p>
+        <p><strong>Estimated Monthly Value:</strong> <em>High.</em> Widely used for flour, pap, and beverages.</p>
+        <p><strong>Demand Insight:</strong> Demand growing due to health focused consumers and breweries</p>
+      </div>
+      <span class="rank-badge">2ND</span>
+    </div>
+
+    <div class="card">
+      <img src="IMG2/sorghum.jpg" alt="sorghum">
+      <div class="card-content">
+        <h4>SORGHUM</h4>
+        <p><strong>Selling Price:</strong> 700 naira per kg</p>
+        <p><strong>Estimated Monthly Value:</strong> <em>High.</em> Key ingredients for breweries and animal feed</p>
+        <p><strong>Demand Insight:</strong> Demand raising due to sorghum basd drinks and large industrial usage</p>
+      </div>
+      <span class="rank-badge">3RD</span>
+    </div>
+
+    <div class="card">
+      <img src="IMG2/cassava.png" alt="cassava">
+      <div class="card-content">
+        <h4>CASSAVA</h4>
+        <p><strong>Selling Price:</strong> 450 naira per kg</p>
+        <p><strong>Estimated Monthly Value:</strong> <em>Moderate-High</em> Strong demand for garri, starch and flour processors.</p>
+        <p><strong>Demand Insight:</strong> Demand riding due to increased processing needs for garri, starch and industrial flour</p>
+      </div>
+      <span class="rank-badge">4TH</span>
+    </div>
+
+    <div class="card">
+      <img src="IMG2/soybean.png" alt="soybeans">
+      <div class="card-content">
+        <h4>SOY BEANS</h4>
+        <p><strong>Selling Price:</strong> 900 naira per kg</p>
+        <p><strong>Estimated Monthly Value:</strong> <em>Moderate.</em> Widely demanded by oil mill, livestock feed companies and food manufacturers.</p>
+        <p><strong>Demand Insight:</strong> Demand rising due to increasing use in feed production and soybean based food/breweries.</p>
+      </div>
+      <span class="rank-badge">5TH</span>
+    </div>
+
+  </section>
+
+  <!-- MARKET UPDATE -->
+  <section id="market" class="market-section">
+
+    <h2 class="market-title">MARKET UPDATE</h2>
+
+    <div class="market-grid">
+
+      <!-- LEFT: BUYERS -->
+      <div class="buyers-box">
+        <h3>TOP BUYERS</h3>
+
+            <p class="buyer b1"> Large buyers / cooperatives</p>
+            <p class="buyer b2">Distributors / wholesalers</p>
+            <p class="buyer b3"> Retailers</p>
+            <p class="buyer b4"> Individual buyers</p>
+        <div class="range-buyer">
+            <img src="range.svg" alt="range">
+        </div>
+        
+      </div>
+
+      <!-- RIGHT: REGION RANKING -->
+      <div class="ranking-box">
+        <h3>REGION RANKING</h3>
+        <ul class="ranking-list">
+          <li>Northern Region <span>⭐ ⭐ ⭐ ⭐ </span></li>
+          <li>Southern Region <span>⭐ ⭐ </span></li>
+          <li>Eastern Region <span>⭐ ⭐ ⭐ </span></li>
+          <li>Western Region <span>⭐ ⭐ ⭐ ⭐ ⭐</span></li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="chart">
+        <img src="IMG/piechart.jpg" alt="Demand trend for top crops">
+
+        <div class="region-section">
+          <p><a href="index.html">Back to Region Selector</a></p>
+        </div>
+    </div>
+</section>
+<!--Footer-->
+    <footer id="contact-us">
+        <div class="contact">
+            <div class="cont-info">
+                <img src="logo.svg" alt="logo">
+                <p>Smart, simple and data-driven - FarmRoute guides farmers to the right crops and the best markets with clear, region-based insights</p>
+            </div>
+            <div class="cont-add">
+                <h1>Contact Us</h1>
+                <p>info@FarmRoute.com</p>
+                <p>Team Tenece</p>
+                <p>Genesys Upskill</p>
+                <p>Cohort 2</p>
+            </div>
+            <div class="socials">
+                <h1>Follow us on</h1>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.033 30H14.967C6.71428 30 0 23.2857 0 15.033V14.967C0 6.7143 6.71428 0 14.967 0H15.033C23.2857 0 30 6.7143 30 14.967V15.033C30 23.2857 23.2857 30 15.033 30ZM14.967 1.01547C7.2738 1.01547 1.01547 7.27382 1.01547 14.967V15.033C1.01547 22.7262 7.2738 28.9845 14.967 28.9845H15.033C22.7262 28.9845 28.9845 22.7262 28.9845 15.033V14.967C28.9845 7.27382 22.7262 1.01547 15.033 1.01547H14.967Z" fill="#F8F7F0"/>
+<path d="M17.0181 11.6362V14.7933H20.9236L20.3052 19.0461H17.0181V28.8443C16.3591 28.9357 15.6848 28.9835 15.0004 28.9835C14.2103 28.9835 13.4345 28.9205 12.679 28.7986V19.0461H9.07715V14.7933H12.679V10.9304C12.679 8.53394 14.6216 6.59033 17.0191 6.59033V6.59236C17.0262 6.59236 17.0323 6.59033 17.0394 6.59033H20.9246V10.2684H18.386C17.6315 10.2684 17.0191 10.8807 17.0191 11.6352L17.0181 11.6362Z" fill="#F8F7F0"/>
+</svg>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.033 30H14.967C6.71428 30 0 23.2857 0 15.033V14.967C0 6.71427 6.71428 0 14.967 0H15.033C23.2857 0 30 6.71427 30 14.967V15.033C30 23.2857 23.2857 30 15.033 30ZM14.967 1.01547C7.27381 1.01547 1.01547 7.27379 1.01547 14.967V15.033C1.01547 22.7262 7.27381 28.9845 14.967 28.9845H15.033C22.7262 28.9845 28.9845 22.7262 28.9845 15.033V14.967C28.9845 7.27379 22.7262 1.01547 15.033 1.01547H14.967Z" fill="#F8F7F0"/>
+<path d="M6.38685 7.06958L13.0707 16.0057L6.34521 23.2714H7.85928L13.748 16.9105L18.5055 23.2714H23.6569L16.5974 13.8326L22.8578 7.06958H21.3437L15.9211 12.9278L11.5393 7.06958H6.38786H6.38685ZM8.61275 8.18459H10.9788L21.429 22.1564H19.0629L8.61275 8.18459Z" fill="#F8F7F0"/>
+</svg>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.033 30H14.967C6.71429 30 0 23.2857 0 15.033V14.967C0 6.71429 6.71429 0 14.967 0H15.033C23.2857 0 30 6.71429 30 14.967V15.033C30 23.2857 23.2857 30 15.033 30ZM14.967 1.01547C7.27381 1.01547 1.01547 7.27381 1.01547 14.967V15.033C1.01547 22.7262 7.27381 28.9845 14.967 28.9845H15.033C22.7262 28.9845 28.9845 22.7262 28.9845 15.033V14.967C28.9845 7.27381 22.7262 1.01547 15.033 1.01547H14.967Z" fill="#F8F7F0"/>
+<path d="M7.42033 10.1415C7.03851 9.78707 6.84863 9.3484 6.84863 8.82644C6.84863 8.30449 7.03953 7.8465 7.42033 7.49109C7.80215 7.13669 8.29364 6.95898 8.89581 6.95898C9.49798 6.95898 9.97018 7.13669 10.351 7.49109C10.7328 7.84549 10.9227 8.29129 10.9227 8.82644C10.9227 9.3616 10.7318 9.78707 10.351 10.1415C9.96917 10.4959 9.48478 10.6736 8.89581 10.6736C8.30684 10.6736 7.80215 10.4959 7.42033 10.1415ZM10.6018 12.1744V23.04H7.1685V12.1744H10.6018Z" fill="#F8F7F0"/>
+<path d="M22.0304 13.2479C22.7788 14.0602 23.1525 15.1752 23.1525 16.5949V22.8481H19.8918V17.0356C19.8918 16.3197 19.706 15.7632 19.3353 15.3672C18.9647 14.9711 18.4651 14.7721 17.8395 14.7721C17.214 14.7721 16.7144 14.9701 16.3437 15.3672C15.9731 15.7632 15.7873 16.3197 15.7873 17.0356V22.8481H12.5073V12.1441H15.7873V13.5637C16.1193 13.0905 16.5672 12.7168 17.1297 12.4416C17.6923 12.1664 18.3249 12.0293 19.0287 12.0293C20.2817 12.0293 21.283 12.4355 22.0304 13.2479Z" fill="#F8F7F0"/>
+</svg>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 30C6.72868 30 0 23.2713 0 15C0 6.72867 6.72868 0 15 0C23.2713 0 30 6.72867 30 15C30 23.2713 23.2713 30 15 30ZM15 1.01826C7.29076 1.01826 1.01826 7.29075 1.01826 15C1.01826 22.7092 7.29076 28.9817 15 28.9817C22.7093 28.9817 28.9817 22.7092 28.9817 15C28.9817 7.29075 22.7093 1.01826 15 1.01826Z" fill="#F8F7F0"/>
+<path d="M24.1248 11.9971C24.0107 10.8964 23.7654 9.67956 22.8622 9.0401C22.1626 8.5442 21.2431 8.52587 20.3847 8.52689C18.5702 8.52791 16.7546 8.52995 14.9401 8.53097C13.1948 8.533 11.4495 8.53403 9.70417 8.53606C8.97509 8.53708 8.26638 8.48006 7.58924 8.79572C7.00781 9.06658 6.55265 9.58181 6.27874 10.1551C5.89892 10.9524 5.8195 11.8556 5.77368 12.7374C5.68917 14.3432 5.69833 15.9531 5.79914 17.5579C5.87347 18.7289 6.06185 20.023 6.96708 20.7694C7.76947 21.4303 8.90178 21.4629 9.94244 21.4639C13.2457 21.4669 16.5499 21.47 19.8542 21.472C20.2778 21.4731 20.7197 21.4649 21.1515 21.4181C22.0007 21.3264 22.8102 21.0831 23.356 20.4538C23.9069 19.8194 24.0484 18.9366 24.1319 18.1006C24.3356 16.0722 24.3335 14.0245 24.1248 11.9971ZM13.0298 17.843V12.156L17.9541 14.999L13.0298 17.843Z" fill="#F8F7F0"/>
+</svg>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="divide"></div>
+        
+        <div class="trademark">
+            
+                <p>&copy; 2025 FarmRoute</p>
+            
+           
+                <p>Site By Team Tenece</p>
+            
+        </div>
+    </footer>
+
+ 
+
+
+
+        <script>
+            const navMenu = document.querySelector('.nav-menu');
+
+            function showMenu(){
+                navMenu.style.display = 'flex';
+            }
+
+            function hideMenu(){
+                navMenu.style.display = 'none';
+            }
+        </script>
+</body>
+</html>
