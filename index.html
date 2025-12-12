@@ -9,20 +9,22 @@
 </head>
 <body>
 
-  <header>
+  <header class= "header">
     <section class="hero">
 
       <nav class="navbar">
           <div class="logo">
-            <span>FarmR<img src="/img/Vector.png" width="18px" height="13px" alt="">ute</span>
+            <span>FarmR <img src="/img/Vector.png" width="18px" height="13px" alt="">ute</span>
           </div>
 
-          <ul class="nav-links">
+          <ul class="nav-links" id=sidemenu>
           <li><a href="">Home</a></li>
           <li><a href="#about-us">About Us</a></li>
-          <li><a href="#overlay">Insights</a></li>
+          <li><a href="#" id="insightsLink">Insights</a></li>
           <li><a href="#contact-us">Contact Us</a></li>
+          <i class= "fas fa-times" onclick="closemenu()"></i>
           </ul>
+          <i class= "fas fa-bars" onclick="openmenu()"></i>
       </nav>
 
       <div class="hero-content">
@@ -30,7 +32,7 @@
         <p class="subtext">FarmRoute helps farmers make smarter decisions using real-time market 
           <br>insights, regional trends, and price data.
         </p>
-        
+        <div cless="select-button-row">
         <select class="region">
           <option value="" disabled selected>Select Your Region</option>
           <option class="sub-region" value="north">North</option>
@@ -50,6 +52,7 @@
             btn.classList.toggle("active");
           });
         </script>
+        </div>
         </div>
       </div>
     </section>
@@ -183,7 +186,8 @@
         <h3>Every region has a winning crop, <br>find yours.</h3>
         <p>Check the top section to see the top-performing crops tailored to
           your exact location.</p>
-      </div>
+          </div>
+      
     </section>
 
     <footer class="footer">
@@ -227,6 +231,68 @@
           <p>Site By Team Tenece</p>
        </div>
     </footer>
+
+    <!-- Overlay & Popup (insert at the end of <body>) -->
+<div id="overlay" class="overlay hidden"></div>
+
+<div id="modal" class="popup-card hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="card-inner">
+    <h2 id="modalTitle">Find the Best Crop for<br>Your Region</h2>
+
+    <p class="subtitle">
+      Choose your region to view the top-selling and most<br>
+      profitable crops near you.
+    </p>
+
+    <div class="insights-preview">
+      <h3>Insights Preview:</h3>
+      <div class="checkbox-row">
+        <label class="checkbox-container">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          Most profitable options
+        </label>
+
+        <label class="checkbox-container">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          Market Demand
+        </label>
+      </div>
+    </div>
+
+    <div class="select-row">
+      <div class="custom-select" id="regionToggle" tabindex="0" aria-haspopup="true" aria-expanded="false">
+        <span class="select-label">Select Your Region</span>
+        <span class="caret" aria-hidden="true"></span>
+
+        <div id="dropdown" class="dropdown hidden" role="menu" aria-labelledby="regionToggle">
+          <button class="drop-item" data-value="North">North</button>
+          <button class="drop-item" data-value="West">West</button>
+          <button class="drop-item" data-value="East">East</button>
+          <button class="drop-item" data-value="South">South</button>
+        </div>
+      </div>
+
+      <button id="viewBtn" class="btn-green">View Best Crop</button>
+    </div>
+
+    <p class="footer-text">Powered by real market data.</p>
+  </div>
+</div>
+<script src="script.js"></script>
+
+<script src="index.js"></script>
+<script>
+  var sidemeu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemeu.style.right = "-100px";
+  }
+  function closemenu(){
+    sidemeu.style.right = "-290px";
+  }
+</script>
 
 </body>
 </html>
